@@ -37,7 +37,7 @@ npm start
 │   ├── assets                       # 资源文件
 │   │   └── logo.svg
 │   ├── components                   # 组件目录
-│   │   ├── content-container        # 页面container，定义了淡入动画
+│   │   ├── content-container        # 页面container
 │   │   │   └── index.tsx   
 │   │   ├── index.tsx                # components 入口文件
 │   │   ├── layout                   # 布局页
