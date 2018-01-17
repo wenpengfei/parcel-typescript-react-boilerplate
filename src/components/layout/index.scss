@@ -1,0 +1,61 @@
+$header-hover-background: #e6f7ff;
+
+@mixin header-action-hover {
+  color: #1890ff;
+  background-color: $header-hover-background;
+}
+
+.trigger {
+  i {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  &:hover {
+    @include header-action-hover;
+  }
+}
+
+.logo {
+  height: 64px;
+  position: relative;
+  line-height: 64px;
+  padding-left: 20px;
+  transition: all 0.3s;
+  background: #002140;
+  overflow: hidden;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+  }
+  h1 {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 0 0 12px;
+    font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+}
+
+.account {
+  color: #000;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    @include header-action-hover;
+  }
+  .action {
+    width: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

@@ -1,0 +1,12 @@
+// * {
+//   transition: all 0.3s;
+// }
+
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

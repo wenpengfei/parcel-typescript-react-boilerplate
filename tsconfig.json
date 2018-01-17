@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "noLib": false,
+    "jsx": "react",
+    "outDir": "dist",
+    "noUnusedLocals": true,
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+    "node_modules/@types"
+    ],
+    "lib": [      
+      "dom",
+      "es2015",
+      "esnext.asynciterable"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "utils": ["utils"],
+      "views": ["views"],
+      "components": ["components"],
+      "service": ["service"],
+      "stores": ["stores"]
+    }
+  },
+  "parcelTsPluginOptions": {
+    // If true type-checking is disabled
+    "transpileOnly": true
+  },
+  "exclude": [
+    "node_modules",
+    "static"
+  ]
+}

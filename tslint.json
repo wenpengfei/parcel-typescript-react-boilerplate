@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "tslint-react",
+    "tslint-eslint-rules",
+    "tslint-config-standard"
+  ],
+  "rules": {
+    "space-before-function-paren": [
+      true, 
+      "never"
+    ],
+    "jsx-boolean-value": ["always", { "never": ["personal"] }],
+    "comma-dangle": [
+      "error", 
+      "always-multiline"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "singleline": "never",
+        "multiline": "always"
+      }
+    ],
+    "jsx-wrap-multiline": false,
+    "jsx-no-multiline-js": false,
+    "no-var-requires": false,
+    "no-floating-promises": false
+  }
+}

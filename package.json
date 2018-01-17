@@ -1,0 +1,54 @@
+{
+  "name": "parcel-react-mobx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "tslint -p tsconfig.json -c tslint.json 'src/**/*.ts*'",
+    "lint:css": "stylelint src/**/*.scss"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "antd": "^3.0.3",
+    "axios": "^0.17.1",
+    "js-cookie": "^2.2.0",
+    "mobx": "^3.4.1",
+    "mobx-react": "^4.3.5",
+    "ramda": "^0.25.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "@types/react": "^16.0.31",
+    "@types/react-dom": "^16.0.3",
+    "autoprefixer": "^7.2.3",
+    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "less": "^2.7.3",
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.4.1",
+    "parcel-plugin-typescript": "^0.4.1",
+    "postcss-modules": "^1.1.0",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-scss": "^2.2.0",
+    "tslint": "^5.9.1",
+    "tslint-config-standard": "^7.0.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.6.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
