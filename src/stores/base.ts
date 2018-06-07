@@ -8,8 +8,8 @@ export default class StoreBase {
   @observable loading = false
   @observable totalCount = 0
   @observable counter = 0
-  @observable pageSize = 10
   @observable pageIndex = 1
+  @observable pageSize = 10
   @observable submiting = false
   @observable initialFormValue = {}
 
@@ -62,11 +62,14 @@ export default class StoreBase {
   }
 
   @action async remove(id) {
+    this.submiting = true
     try {
       await this.service.delete(id)
       this.getPageList({ pageIndex: this.pageIndex })
     } catch (error) {
       throw error
+    } finally {
+      this.submiting = false
     }
   }
 

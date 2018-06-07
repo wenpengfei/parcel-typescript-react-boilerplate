@@ -12,6 +12,7 @@ import Pages from './pages'
 
 @observer
 class App extends React.Component {
+
   render() {
     return (
       <Router>
